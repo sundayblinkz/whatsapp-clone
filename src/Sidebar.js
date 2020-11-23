@@ -11,13 +11,13 @@ function Sidebar() {
     useEffect(() => {
         db.collection("rooms").onSnapshot((snapshot)
             =>
-            setRooms(snapshot.docs.map((doc) =>
-                ({
+            setRooms(
+                snapshot.docs.map((doc) => ({
                     id: doc.id,
                     data: doc.data(),
-                })
-            ))
-        )
+                }))
+            )
+        );
     }, []);
 
     return (
