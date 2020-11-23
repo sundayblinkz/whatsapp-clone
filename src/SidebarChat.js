@@ -8,9 +8,14 @@ function Sidebarchat({ addNewChat }) {
 
     useEffect(() => {
         setSeed(Math.floor(Math.random() * 5000))
-    }, [])
+    }, []);
 
-    const createChat = () => { };
+    const createChat = () => {
+        const roomName = prompt("please enter name for the chatroom");
+        if (roomName) {
+            //do some clever database stuff...
+        }
+    };
 
     return !addNewChat ? (
         <div className="sidebarChat">
