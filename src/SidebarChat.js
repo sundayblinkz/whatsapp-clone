@@ -2,7 +2,7 @@ import { Avatar } from '@material-ui/core'
 import React, { useState, useEffect } from 'react'
 import './SidebarChat.css'
 
-function Sidebarchat({ addNewChat }) {
+function Sidebarchat({ id, name, addNewChat }) {
 
     const [seed, setSeed] = useState('')
 
