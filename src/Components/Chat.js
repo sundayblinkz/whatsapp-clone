@@ -1,7 +1,7 @@
 import { Avatar, IconButton } from '@material-ui/core'
 import { AttachFile, InsertEmoticon, Mic, MoreVert, SearchOutlined } from '@material-ui/icons';
 import React, { useState, useEffect } from 'react'
-import "./Chat.css"
+import "../Chat.css"
 
 function Chat() {
     const [input, setInput] = useState("");
